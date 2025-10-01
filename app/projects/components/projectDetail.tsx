@@ -32,13 +32,23 @@ const ProjectDetail = ({project , updateHash} : {project : Project , updateHash 
             <div className="w-full h-[1px] bg-foreground/25 md:hidden "></div>
             <div className="w-full md:w-1/3 flex flex-col gap-9 md:pl-5 ">
                 {project.status == "Active" &&
-                    <a className=" text-[1.125rem] break-all font-extralight hover:font-light text-green-700" 
-                    target="_blank" href={project.url}>{project.url}</a>
+                    <>
+                        {project.url.map((url : string, index : number) => {
+                            return (
+                                <a key={index} className=" text-[1.125rem] break-all font-extralight hover:font-light text-green-700" 
+                                target="_blank" href={url}>{url}</a>
+                            )
+                        })}
+                    </>
                 }
                 <div className="text-[1.125rem]">
                     <span className="font-light">{"Github: "}</span>
-                    <a href={project.github} target="_blank"
-                    className="font-extralight break-all hover:font-light text-green-700">{project.github}</a>
+                    {project.github.map((url : string, index : number) => {
+                        return (
+                            <a key={index} href={url} target="_blank"
+                            className="font-extralight break-all hover:font-light text-green-700">{url}<br/></a>
+                        )
+                    })}
                 </div>
                 <div className={`w-fit text-[1rem] font-light py-1 px-2 rounded-full border ${ project.status == "Active" ? "border-green-700 text-green-700" : "border-foreground"}` } >
                     {project.status}
