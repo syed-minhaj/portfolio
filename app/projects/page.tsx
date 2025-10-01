@@ -18,15 +18,15 @@ export default function Home() {
     }, [hash])
     
     return (
-        <div className="w-10/12 mx-auto  grid grid-cols-1 md:grid-cols-2 gap-16 py-10 overflow-x-hidden">
+        <div className="w-10/12 mx-auto  grid grid-cols-1 md:grid-cols-2 gap-16 py-10 ">
             {Projects.map((project : Project, index:number) => {
                 return (
                     <div key={index} onClick={() => {updateHash(JSON.stringify(index)); }}
                         className="flex flex-col gap-5 hover:scale-105 transition-all duration-300 cursor-pointer ">
-                        <Image className="w-full h-[18.75rem] border border-foreground/25 " src={project.image} alt={project.name} width={400} height={300} />
+                        <Image className="w-full aspect-video object-cover border border-foreground/25 " src={project.image} alt={project.name} width={400} height={300} />
                         <div className="flex flex-col ">
                             <h2 className="text-[1.125rem] font-light">{project.name}</h2>
-                            <p className="text-[0.875rem] font-extralight line-clamp-2">{project.description}</p>
+                            <p className="text-[0.875rem] font-extralight line-clamp-2">{project.shortDescription}</p>
                         </div>
                     </div>
                 )
