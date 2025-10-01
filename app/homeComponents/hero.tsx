@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 
 const Hero = () => {
     return (
@@ -14,6 +14,10 @@ const Hero = () => {
                     • Diving deeper into infra, backend patterns, and how everything fits together
                 </span>
             </span>
+            <div className="ml-auto shadow-[0px_12px_12px_0px_rgba(0,0,0,0.25),inset_0px_12px_12px_0px_rgba(0,0,0,0.25)] aspect-square h-60 w-60 hidden md:block">
+                <Image src="/portrait.png" alt="Syed Minhaj" width={240} height={240} 
+                    className={` hidden md:block aspect-square h-60 w-60 relative z-[-10] `}  />
+            </div>
         </div>
     )
 }
