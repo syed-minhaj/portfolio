@@ -18,7 +18,7 @@ const ProjectDetail = ({project , updateHash} : {project : Project , updateHash 
                 <span className="text-[1.125rem] font-light">{"Project Description: "}
                     <span className="font-extralight">{project.description}</span>
                 </span>
-                <Image src={project.image} alt={project.name} width={440} height={260} />
+                <Image className="max-w-full" src={project.image} alt={project.name} width={440} height={260} />
                 <span className="text-[1.125rem] font-light flex flex-row flex-wrap items-center gap-2 ">Tech Stack:
                     {project.tech.map((tech : string, index : number) => {
                         return (
@@ -32,13 +32,13 @@ const ProjectDetail = ({project , updateHash} : {project : Project , updateHash 
             <div className="w-full h-[1px] bg-foreground/25 md:hidden "></div>
             <div className="w-full md:w-1/3 flex flex-col gap-9 md:pl-5 ">
                 {project.status == "Active" &&
-                    <a className=" text-[1.125rem] break-words font-extralight hover:font-light text-green-700" 
+                    <a className=" text-[1.125rem] break-all font-extralight hover:font-light text-green-700" 
                     target="_blank" href={project.url}>{project.url}</a>
                 }
                 <div className="text-[1.125rem]">
                     <span className="font-light">{"Github: "}</span>
                     <a href={project.github} target="_blank"
-                    className="font-extralight break-words hover:font-light text-green-700">{project.github}</a>
+                    className="font-extralight break-all hover:font-light text-green-700">{project.github}</a>
                 </div>
                 <div className={`w-fit text-[1rem] font-light py-1 px-2 rounded-full border ${ project.status == "Active" ? "border-green-700 text-green-700" : "border-foreground"}` } >
                     {project.status}
