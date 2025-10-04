@@ -8,7 +8,7 @@ const ProjectDetail = ({project , updateHash} : {project : Project , updateHash 
             className="absolute top-0 left-0 p-4 cursor-pointer ">
                 {"<- Back"}
             </button>
-            <div className="w-full md:w-2/3 flex flex-col gap-9 md:pr-5 md:border-r md:border-foreground/25 ">
+            <div className="w-full md:w-2/3 flex flex-col gap-9 ">
                 <div className="flex flex-col gap-2">
                     <h2 className="text-[1.75rem] font-extralight">{project.name}</h2>
                     <span className="text-[1.125rem] font-light">{"Role: "} 
@@ -29,8 +29,8 @@ const ProjectDetail = ({project , updateHash} : {project : Project , updateHash 
                     })}
                 </span>
             </div>
-            <div className="w-full h-[1px] bg-foreground/25 md:hidden "></div>
-            <div className="w-full md:w-1/3 flex flex-col gap-9 md:pl-5 ">
+            <div><div className="md:h-full md:w-[1px] w-full h-[1px] bg-foreground/25"></div></div>
+            <div className="w-full md:w-1/3 flex flex-col gap-9 ">
                 {project.status == "Active" &&
                     <>
                         {project.url.map((url : string, index : number) => {
