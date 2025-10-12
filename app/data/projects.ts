@@ -69,7 +69,7 @@ const Projects : Project[] = [
         description : "Simple chat app which allow users to chat directly with each other or create chat groups, web sockets are used to enable real-time communication." ,
         image : "/projects/chatApp.png" ,
         url : ["https://chatapp-seven-hazel.vercel.app"] ,
-        tech : ["ReactJS", "NextJS", "ExpressJS", "PrismaORM", "Stripe", "DrizzleORM"] ,
+        tech : ["ReactJS", "NextJS", "ExpressJS", "WebSocket" , "Socket.io" , "TypeScript" , "TailwindCSS"] ,
         github : ["https://github.com/syed-minhaj/chatapp","https://github.com/syed-minhaj/chatapp-socketiobackend"] ,
         role : ["Front-End Developer", "Back-End Developer"] ,
         status : "Active"
