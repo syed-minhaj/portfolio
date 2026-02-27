@@ -18,7 +18,9 @@ const ProjectDetail = ({project , updateHash} : {project : Project , updateHash 
                 <span className="text-[1.125rem] font-light">{"Project Description: "}
                     <span className="font-extralight">{project.description}</span>
                 </span>
-                <Image className="max-w-full" src={project.image} alt={project.name} width={440} height={260} />
+                {project.images.map((image : string, index : number) => (
+                      <Image className="max-w-full" src={image} alt={project.name} width={440} height={260} />
+                ))}
                 <span className="text-[1.125rem] font-light flex flex-row flex-wrap items-center gap-2 ">Tech Stack:
                     {project.tech.map((tech : string, index : number) => {
                         return (

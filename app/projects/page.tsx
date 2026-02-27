@@ -23,7 +23,7 @@ export default function Home() {
                 return (
                     <div key={index} onClick={() => {updateHash(JSON.stringify(index)); }}
                         className="flex flex-col gap-5 hover:scale-105 transition-all duration-300 cursor-pointer ">
-                        <Image className="w-full aspect-video object-cover border border-foreground/25 " src={project.image} alt={project.name} width={400} height={300} />
+                        <Image className="w-full aspect-video object-cover border border-foreground/25 " src={project.images[0]} alt={project.name} width={400} height={300} />
                         <div className="flex flex-col ">
                             <h2 className="text-[1.125rem] font-light">{project.name}</h2>
                             <p className="text-[0.875rem] font-extralight line-clamp-2">{project.shortDescription}</p>
