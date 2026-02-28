@@ -19,6 +19,7 @@ export function useHash(defaultHash : string) {
     const updateHash = (newHash : string) => {
         const currentScrollY = window.scrollY;
         window.location.hash = newHash;
+        setHash(newHash)
         window.scrollTo(0, currentScrollY);
     }
 
