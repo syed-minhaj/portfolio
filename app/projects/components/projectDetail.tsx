@@ -18,6 +18,9 @@ const ProjectDetail = ({project , updateHash} : {project : Project , updateHash 
                 <span className="text-[1.125rem] font-light">{"Project Description: "}
                     <span className="font-extralight">{project.description}</span>
                 </span>
+                {project.video && 
+                    <video className="w-[27.5rem] max-w-full" src={project.video} controls autoPlay loop muted></video>
+                }
                 {project.images.map((image : string, index : number) => (
                       <Image className="max-w-full" src={image} alt={project.name} width={440} height={260} />
                 ))}

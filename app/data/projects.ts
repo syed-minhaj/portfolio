@@ -3,6 +3,7 @@ type Project = {
     name : string ,
     shortDescription : string ,
     description : string ,
+    video? : string,
     images : string[] ,
     url : string[] ,
     tech : string[] ,
