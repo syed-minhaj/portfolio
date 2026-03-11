@@ -27,6 +27,35 @@ const Projects : Project[] = [
         status : "Active"
     },
     {
+        name: "EverythingCourse ",
+        shortDescription: "AI course builder , builds custom courses for use",
+        description: `A project designed to automate personalized learning. It combines Gemini’s reasoning with 
+        YouTube’s content library to generate structured, on-demand curricula. Essentially, you tell it what you 
+        want to master, and it builds a custom learning path that skips the fluff of traditional, one-size-fits-all courses.`,
+        video: "/projects/videos/everythingCourse.mp4",
+        images : ["/projects/everythingCourse1.png" , "/projects/everythingCourse2.png" , "/projects/everythingCourse3.png"] ,
+        url : ["https://everythingcourse.vercel.app"] ,
+        tech : ["TanstackStart","DrizzleORM","PostgreSQL","BetterAuth","Gemini API"] ,
+        github : ["https://github.com/syed-minhaj/everything-course"] ,
+        role : ["Front-End Developer", "Back-End Developer" , "Database Administrator"] ,
+        status : "Active"
+    },
+    {
+        name: "Quantefy",
+        shortDescription: "Web app for inventory tracking",
+        description: `Quantefy is an open-source, Progressive Web Application (PWA) designed to streamline 
+        inventory and order management for modern brands with multiple store locations. Built with scalability 
+        and developer flexibility in mind, it provides real-time stock tracking and automates order processing via a 
+        powerful API and webhooks.`,
+        images : ["/projects/quantefy.png" , "/projects/quantefy2.png" , "/projects/quantefy3.png"] ,
+        video: "/projects/videos/quantefy.mp4",
+        url : ["https://quantefy.vercel.app"] ,
+        tech : ["NextJS", "TypeScript", "PostgreSQL","TailwindCSS" ,"Shadnc/ui" ] ,
+        github : ["https://github.com/syed-minhaj/quantefy"] ,
+        role : ["Front-End Developer", "Back-End Developer" , "Database Administrator", "Designer"] ,
+        status : "Active"
+    },
+    {
         name : "Open Course",
         shortDescription : "Digital marketplace for pre packaged courses using free resources on internet." ,
         description: `This project is an e-commerce platform where users can create, sell, and buy online courses. 
