@@ -33,6 +33,7 @@ const Projects : Project[] = [
         A unique feature of this platform is that course creators can use materials from the internet to build their course content. 
         The application is built with Next.js and utilizes a PostgreSQL database with Prisma for data management, Stripe for secure payments, 
         and NextAuth.js for authentication.`,
+        video: "/projects/videos/openCourse.mp4",
         images : ["/projects/openCourse.png"] ,
         url : ["https://open-course-ebon.vercel.app"] ,
         tech : ["ReactJS", "NextJS", "TypeScript", "PostgreSQL", "PrismaORM", "Stripe", "Supabase" , "AuthJS"] ,
@@ -57,6 +58,7 @@ const Projects : Project[] = [
         name : "Image Convert",
         shortDescription:"Converts image formate and size." ,
         description : "Simple static web application that converts image formate and size at clients own divice." ,
+        video: "/projects/videos/imageConvert.mp4",
         images : ["/projects/imageConvert.png"] ,
         url : ["https://image-convertor-two.vercel.app"] ,
         tech : ["ReactJS", "NextJS", "TypeScript", "TailwindCSS"] ,
@@ -68,6 +70,7 @@ const Projects : Project[] = [
         name : "Chat App",
         shortDescription:"Simple chat app using Socket.io." ,
         description : "Simple chat app which allow users to chat directly with each other or create chat groups, web sockets are used to enable real-time communication." ,
+        video: "/projects/videos/chatApp.mp4",
         images : ["/projects/chatApp.png","/projects/chatApp.png"] ,
         url : ["https://chatapp-seven-hazel.vercel.app"] ,
         tech : ["ReactJS", "NextJS", "ExpressJS", "WebSocket" , "Socket.io" , "TypeScript" , "TailwindCSS"] ,
