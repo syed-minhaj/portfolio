@@ -19,7 +19,8 @@ const Projects : Project[] = [
         description: `Geo_Harvest is a web application built with Next.js for agricultural data visualization 
         and management. It allows users to view and analyze data related to their fields, including information 
         fetched from third-party APIs.`,
-        images : ["/projects/geoHarvest.png", "/projects/geoHarvest2.png" , "/projects/geoHarvest3.png" , "/projects/geoHarvest4.png"] ,
+        video: "/projects/videos/geoHarvest.mp4",
+        images : ["/projects/geoHarvest1.png", "/projects/geoHarvest2.png" , "/projects/geoHarvest3.png" ] ,
         url : ["https://geo-harvest.vercel.app"] ,
         tech : ["ReactJS", "NextJS", "TypeScript", "DrizzleORM", "PostgreSQL", "BetterAuth" , "Shadcn ui" ] ,
         github : ["https://github.com/syed-minhaj/geo_harvest"] ,
