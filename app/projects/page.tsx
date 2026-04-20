@@ -36,7 +36,7 @@ export default function Home() {
             }
             <div className={`h-screen lg:w-[75vw] bg-background fixed top-0 right-0  transition-transform duration-500 ease-in-out px-10 py-20 overflow-scroll 
                 ${hash != "" ? "translate-x-0" : "translate-x-[100%]"}`}>
-                    <ProjectDetail project={Projects[Number(hash)]} updateHash={updateHash} />
+                    <ProjectDetail project={Projects[Number(hash)]} updateHash={updateHash} key={hash} />
             </div>
         </div>
     );
