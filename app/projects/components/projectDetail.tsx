@@ -22,7 +22,7 @@ const ProjectDetail = ({project , updateHash} : {project : Project , updateHash 
                     <video className="w-[27.5rem] max-w-full" src={project.video} controls autoPlay loop muted></video>
                 }
                 {project.images.map((image : string, index : number) => (
-                      <Image className="max-w-full" src={image} alt={project.name} width={440} height={260} />
+                      <Image className="max-w-full" src={image} alt={project.name} width={440} height={260} key={`${project.name}-${index}`} />
                 ))}
                 <span className="text-[1.125rem] font-light flex flex-row flex-wrap items-center gap-2 ">Tech Stack:
                     {project.tech.map((tech : string, index : number) => {
