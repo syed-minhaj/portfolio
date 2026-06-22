@@ -20,7 +20,7 @@ const Projects : Project[] = [
         and management. It allows users to view and analyze data related to their fields, including information 
         fetched from third-party APIs.`,
         video: "/projects/videos/geoHarvest.mp4",
-        images : ["/projects/geoHarvest1.png", "/projects/geoHarvest2.png" , "/projects/geoHarvest3.png" ] ,
+        images : ["/webp/projects/geoHarvest1.webp", "/webp/projects/geoHarvest2.webp" , "/webp/projects/geoHarvest3.webp" ] ,
         url : ["https://geo-harvest.vercel.app"] ,
         tech : ["ReactJS", "NextJS", "TypeScript", "DrizzleORM", "PostgreSQL", "BetterAuth" , "Shadcn ui" ] ,
         github : ["https://github.com/syed-minhaj/geo_harvest"] ,
@@ -34,7 +34,7 @@ const Projects : Project[] = [
         YouTube’s content library to generate structured, on-demand curricula. Essentially, you tell it what you 
         want to master, and it builds a custom learning path that skips the fluff of traditional, one-size-fits-all courses.`,
         video: "/projects/videos/everythingCourse.mp4",
-        images : ["/projects/everythingCourse1.png" , "/projects/everythingCourse2.png" , "/projects/everythingCourse3.png"] ,
+        images : ["/webp/projects/everythingCourse1.webp" , "/webp/projects/everythingCourse2.webp" , "/webp/projects/everythingCourse3.webp"] ,
         url : ["https://everythingcourse.vercel.app"] ,
         tech : ["TanstackStart","DrizzleORM","PostgreSQL","BetterAuth","Gemini API"] ,
         github : ["https://github.com/syed-minhaj/everything-course"] ,
@@ -48,7 +48,7 @@ const Projects : Project[] = [
         inventory and order management for modern brands with multiple store locations. Built with scalability 
         and developer flexibility in mind, it provides real-time stock tracking and automates order processing via a 
         powerful API and webhooks.`,
-        images : ["/projects/quantefy.png" , "/projects/quantefy2.png" , "/projects/quantefy3.png"] ,
+        images : ["/webp/projects/quantefy.webp" , "/webp/projects/quantefy2.webp" , "/webp/projects/quantefy3.webp"] ,
         video: "/projects/videos/quantefy.mp4",
         url : ["https://quantefy.vercel.app"] ,
         tech : ["NextJS", "TypeScript", "PostgreSQL","TailwindCSS" ,"Shadnc/ui" ] ,
@@ -64,7 +64,7 @@ const Projects : Project[] = [
         The application is built with Next.js and utilizes a PostgreSQL database with Prisma for data management, Stripe for secure payments, 
         and NextAuth.js for authentication.`,
         video: "/projects/videos/openCourse.mp4",
-        images : ["/projects/openCourse.png"] ,
+        images : ["/webp/projects/openCourse.webp"] ,
         url : ["https://open-course-ebon.vercel.app"] ,
         tech : ["ReactJS", "NextJS", "TypeScript", "PostgreSQL", "PrismaORM", "Stripe", "Supabase" , "AuthJS"] ,
         github : ["https://github.com/syed-minhaj/open-course"] ,
@@ -77,7 +77,7 @@ const Projects : Project[] = [
         description : `A simple and lightweight authentication library for web apps using One-Time Passwords (OTP) and Password-based login. 🔒
         Built in TypeScript, compiled for both CommonJS and ESModules. \n 
         UI: This package provides ready-to-use pages for signing in, signing up, and deleting accounts, with HTML inline styling so no CSS setup is required.`,
-        images : ["/projects/openAuth.png"] ,
+        images : ["/webp/projects/openAuth.webp"] ,
         url : ["https://www.npmjs.com/package/@open_auth/auth","https://www.npmjs.com/package/@open_auth/react-ui"] ,
         tech : ["ReactJS", "SQL", "PostgreSQL", "TypeScript", "ExpressJS" , "JWT"] ,
         github : ["https://github.com/syed-minhaj/open_auth"] ,
@@ -89,7 +89,7 @@ const Projects : Project[] = [
         shortDescription:"Converts image formate and size." ,
         description : "Simple static web application that converts image formate and size at clients own divice." ,
         video: "/projects/videos/imageConvert.mp4",
-        images : ["/projects/imageConvert.png"] ,
+        images : ["/webp/projects/imageConvert.webp"] ,
         url : ["https://image-convertor-two.vercel.app"] ,
         tech : ["ReactJS", "NextJS", "TypeScript", "TailwindCSS"] ,
         github : ["https://github.com/syed-minhaj/imageConvertor" ],
@@ -101,7 +101,7 @@ const Projects : Project[] = [
         shortDescription:"Simple chat app using Socket.io." ,
         description : "Simple chat app which allow users to chat directly with each other or create chat groups, web sockets are used to enable real-time communication." ,
         video: "/projects/videos/chatApp.mp4",
-        images : ["/projects/chatApp.png","/projects/chatApp.png"] ,
+        images : ["/webp/projects/chatApp.webp"] ,
         url : ["https://chatapp-seven-hazel.vercel.app"] ,
         tech : ["ReactJS", "NextJS", "ExpressJS", "WebSocket" , "Socket.io" , "TypeScript" , "TailwindCSS"] ,
         github : ["https://github.com/syed-minhaj/chatapp","https://github.com/syed-minhaj/chatapp-socketiobackend"] ,
