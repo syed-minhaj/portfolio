@@ -17,6 +17,10 @@ export default function ProjectsClient({ projects }: { projects: Project[] }) {
       html?.classList.add("overflow-hidden");
     } else {
       html?.classList.remove("overflow-hidden");
+      const projectDetail = document.getElementById("project-detail");
+      if (projectDetail) {
+        projectDetail.scrollTo(0, 0);
+      }
     }
   }, [hash]);
 
@@ -58,7 +62,7 @@ export default function ProjectsClient({ projects }: { projects: Project[] }) {
       )}
       <div
         className={`h-screen lg:w-[75vw] bg-background fixed top-0 right-0  transition-transform duration-500 ease-in-out px-10 py-20 overflow-scroll 
-                ${hash != "" ? "translate-x-0" : "translate-x-[100%]"}`}
+                ${hash != "" ? "translate-x-0" : "translate-x-[100%]"}`} id="project-detail"
       >
         <ProjectDetail
           project={projects[Number(hash)]}
