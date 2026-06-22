@@ -1,5 +1,8 @@
-import { Project } from "../../data/projects";
+import type { Project } from "../../data/projects";
 import Image from "next/image";
+
+const IMAGE_BLUR =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 440 260'%3E%3Crect width='440' height='260' fill='%23e2e8f0'/%3E%3C/svg%3E";
 
 const ProjectDetail = ({project , updateHash} : {project : Project , updateHash : (hash : string) => void}) => {
     return (
@@ -23,7 +26,10 @@ const ProjectDetail = ({project , updateHash} : {project : Project , updateHash 
                         poster={project.images[0]}></video>
                 }
                 {project.images.map((image : string, index : number) => (
-                      <Image className="max-w-full" src={image} alt={project.name} width={440} height={260} key={`${project.name}-${index}`} />
+                      <Image className="max-w-full" src={image} alt={project.name} width={440} height={260}
+                          key={`${project.name}-${index}`} placeholder="blur"
+                          blurDataURL={IMAGE_BLUR}
+                          sizes="(max-width: 768px) 100vw, 50vw" />
                 ))}
                 <span className="text-[1.125rem] font-light flex flex-row flex-wrap items-center gap-2 ">Tech Stack:
                     {project.tech.map((tech : string, index : number) => {
