@@ -20,7 +20,7 @@ const Projects : Project[] = [
         and management. It allows users to view and analyze data related to their fields, including information 
         fetched from third-party APIs.`,
         video: "/projects/videos/geoHarvest.mp4",
-        images : ["/webp/projects/geoHarvest1.webp", "/webp/projects/geoHarvest2.webp" , "/webp/projects/geoHarvest3.webp" ] ,
+        images : ["/webp/projects/geoHarvest1.webp", "/webp/projects/geoHarvest-dashboard.webp", "/webp/projects/geoHarvest-fields.webp" , "/webp/projects/geoHarvest-analytics.webp" ] ,
         url : ["https://geo-harvest.vercel.app"] ,
         tech : ["ReactJS", "NextJS", "TypeScript", "DrizzleORM", "PostgreSQL", "BetterAuth" , "Shadcn ui" ] ,
         github : ["https://github.com/syed-minhaj/geo_harvest"] ,
