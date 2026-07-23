@@ -27,3 +27,12 @@ body {
   position : relative;
 }
 
+::selection {
+    background-color: #808080;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #808080;
+    color: #ffffff;
+}
