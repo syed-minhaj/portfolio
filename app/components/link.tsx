@@ -8,7 +8,7 @@ const LinkComponent = ({link , href} : {link : string , href : string}) => {
     return (
         <Link className="flex flex-col whitespace-nowrap " href={href} >
             {link}
-            {active && <span className="w-full h-[1px] bg-foreground "></span>}
+            <span className= {`w-full h-[1px] bg-foreground ${active ? "bg-foreground" : "bg-transparent"}`} ></span>
         </Link>
     )
 }
