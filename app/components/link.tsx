@@ -4,10 +4,11 @@ import { usePathname } from "next/navigation";
 
 const LinkComponent = ({link , href} : {link : string , href : string}) => {
     const path =  usePathname();
+    const active = href === "/" ? path === href : path.startsWith(href);
     return (
-        <Link className="flex flex-col " href={href} >
+        <Link className="flex flex-col whitespace-nowrap " href={href} >
             {link}
-            {path === href && <span className="w-full h-[1px] bg-foreground "></span>}
+            {active && <span className="w-full h-[1px] bg-foreground "></span>}
         </Link>
     )
 }

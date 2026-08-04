@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function GeoHarvestCaseStudy() {
     return (
         <div className="max-w-3xl mx-auto px-5 py-12 md:py-20 flex flex-col gap-8 font-[family-name:var(--font-jetbrains-mono)]">
-            <Link href="/" className="text-sm hover:opacity-60 transition-opacity">
+            <Link href="/case-studies" className="text-sm hover:opacity-60 transition-opacity">
                 {"<- Back"}
             </Link>
 

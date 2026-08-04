@@ -7,9 +7,10 @@ export default async function Navbar() {
         <div className="w-10/12 mx-auto flex flex-row md:items-center py-7">
             <div className="flex flex-col md:flex-row md:items-center gap-4 ">
                 <div className="font-bold text-xl tracking-[0.25rem] mr-12">SYED MINHAJ</div>
-                <div className="tracking-[0.2rem] flex flex-row gap-4 ">
+                <div className="tracking-[0.2rem] flex flex-row gap-8 ">
                     <LinkComponent link="HOME"  href={"/"} />
                     <LinkComponent link="PROJECTS"  href={"/projects"} />
+                    <LinkComponent link="CASE STUDIES"  href={"/case-studies"} />
                 </div>
             </div>
             <div className="ml-auto flex flex-row gap-4 w-fit ">
