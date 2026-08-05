@@ -11,6 +11,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-jetbrains-mono: var(--font-jetbrains-mono);
+  --font-pixel: var(--font-vt323);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -39,4 +40,64 @@ body {
 ::-moz-selection {
     background-color: #808080;
     color: #ffffff;
+}
+
+@keyframes spin-cube {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@keyframes code-cube {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    7% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    14% {
+        transform: rotateX(0deg) rotateY(-90deg);
+    }
+    21% {
+        transform: rotateX(0deg) rotateY(-90deg);
+    }
+    28% {
+        transform: rotateX(0deg) rotateY(-180deg);
+    }
+    35% {
+        transform: rotateX(0deg) rotateY(-180deg);
+    }
+    42% {
+        transform: rotateX(0deg) rotateY(-270deg);
+    }
+    49% {
+        transform: rotateX(0deg) rotateY(-270deg);
+    }
+    56% {
+        transform: rotateX(-90deg) rotateY(-360deg);
+    }
+    63% {
+        transform: rotateX(-90deg) rotateY(-360deg);
+    }
+    70% {
+        transform: rotateX(0deg) rotateY(-360deg);
+    }
+    77% {
+        transform: rotateX(0deg) rotateY(-360deg);
+    }
+    84% {
+        transform: rotateX(90deg) rotateY(-360deg);
+    }
+    91% {
+        transform: rotateX(90deg) rotateY(-360deg);
+    }
+    98% {
+        transform: rotateX(0deg) rotateY(-360deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(-360deg);
+    }
 }
