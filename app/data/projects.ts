@@ -1,6 +1,7 @@
 
 type Project = {
     name : string ,
+    formerlyKnownAs? : string ,
     shortDescription : string ,
     description : string ,
     video? : string,
@@ -28,16 +29,17 @@ const Projects : Project[] = [
         status : "Active"
     },
     {
-        name: "EverythingCourse ",
+        name: "Course Architect",
+        formerlyKnownAs: "EverythingCourse",
         shortDescription: "AI course builder , builds custom courses for use",
         description: `A project designed to automate personalized learning. It combines Gemini’s reasoning with 
         YouTube’s content library to generate structured, on-demand curricula. Essentially, you tell it what you 
         want to master, and it builds a custom learning path that skips the fluff of traditional, one-size-fits-all courses.`,
         video: "/projects/videos/everythingCourse.mp4",
         images : ["/webp/projects/everythingCourse1.webp" , "/webp/projects/everythingCourse2.webp" , "/webp/projects/everythingCourse3.webp"] ,
-        url : ["https://everythingcourse.vercel.app"] ,
+        url : ["https://coursearchitect.vercel.app"] ,
         tech : ["TanstackStart","DrizzleORM","PostgreSQL","BetterAuth","Gemini API"] ,
-        github : ["https://github.com/syed-minhaj/everything-course"] ,
+        github : ["https://github.com/syed-minhaj/Course-Architect"] ,
         role : ["Front-End Developer", "Back-End Developer" , "Database Administrator"] ,
         status : "Active"
     },

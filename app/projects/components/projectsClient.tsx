@@ -47,6 +47,11 @@ export default function ProjectsClient({ projects }: { projects: Project[] }) {
             />
             <div className="flex flex-col ">
               <h2 className="text-[1.125rem] font-light">{project.name}</h2>
+              {project.formerlyKnownAs && (
+                <span className="text-[0.75rem] font-extralight text-foreground/50">
+                  Previously known as {project.formerlyKnownAs}
+                </span>
+              )}
               <p className="text-[0.875rem] font-extralight line-clamp-2">
                 {project.shortDescription}
               </p>

@@ -14,7 +14,7 @@ const CaseStudies: CaseStudy[] = [
         href: "/case-studies/geo-harvest",
     },
     {
-        name: "EverythingCourse",
+        name: "Course Architect",
         shortDescription:
             "AI course generator that turns any topic into a structured curriculum — built on a two-pass pipeline that verifies every video link against the real YouTube API.",
         image: "/webp/projects/everythingCourse1.webp",

@@ -14,6 +14,11 @@ const ProjectDetail = ({project , updateHash} : {project : Project , updateHash 
             <div className="w-full md:w-2/3 flex flex-col gap-9 ">
                 <div className="flex flex-col gap-2">
                     <h2 className="text-[1.75rem] font-extralight">{project.name}</h2>
+                    {project.formerlyKnownAs &&
+                        <span className="text-[0.875rem] font-extralight text-foreground/50">
+                            Previously known as {project.formerlyKnownAs}
+                        </span>
+                    }
                     <span className="text-[1.125rem] font-light">{"Role: "} 
                         <span className="font-extralight">{project.role.join(" , ")}</span>
                     </span>
