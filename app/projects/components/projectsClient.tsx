@@ -26,7 +26,7 @@ export default function ProjectsClient({ projects }: { projects: Project[] }) {
 
   return (
     <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 py-10 ">
-      {projects.map((project, index) => {
+      {projects.filter((project) => project.display).map((project, index) => {
         return (
           <div
             key={index}

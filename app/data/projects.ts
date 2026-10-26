@@ -10,7 +10,8 @@ type Project = {
     tech : string[] ,
     github : string[] ,
     role : string[] ,
-    status : "Active" | "Inactive"
+    status : "Active" | "Inactive",
+    display : boolean
 }
 
 const Projects : Project[] = [
@@ -26,7 +27,8 @@ const Projects : Project[] = [
         tech : ["ReactJS", "NextJS", "TypeScript", "DrizzleORM", "PostgreSQL", "BetterAuth" , "Shadcn ui" ] ,
         github : ["https://github.com/syed-minhaj/geo_harvest"] ,
         role : ["Front-End Developer", "Back-End Developer" , "Database Administrator","Designer"] ,
-        status : "Active"
+        status : "Active",
+        display : true
     },
     {
         name: "Course Architect",
@@ -41,7 +43,8 @@ const Projects : Project[] = [
         tech : ["TanstackStart","DrizzleORM","PostgreSQL","BetterAuth","Gemini API"] ,
         github : ["https://github.com/syed-minhaj/Course-Architect"] ,
         role : ["Front-End Developer", "Back-End Developer" , "Database Administrator"] ,
-        status : "Active"
+        status : "Active",
+        display : true
     },
     {
         name: "Quantefy",
@@ -56,7 +59,22 @@ const Projects : Project[] = [
         tech : ["NextJS", "TypeScript", "PostgreSQL","TailwindCSS" ,"Shadnc/ui" ] ,
         github : ["https://github.com/syed-minhaj/quantefy"] ,
         role : ["Front-End Developer", "Back-End Developer" , "Database Administrator", "Designer"] ,
-        status : "Active"
+        status : "Active",
+        display : true
+    },
+    {  
+        name : "Open Auth" , 
+        shortDescription: "Core: Auth library for web apps using One-Time Passwords (OTP) and Password-based login." ,
+        description : `A simple and lightweight authentication library for web apps using One-Time Passwords (OTP) and Password-based login. 🔒
+        Built in TypeScript, compiled for both CommonJS and ESModules. \n 
+        UI: This package provides ready-to-use pages for signing in, signing up, and deleting accounts, with HTML inline styling so no CSS setup is required.`,
+        images : ["/webp/projects/openAuth.webp"] ,
+        url : ["https://www.npmjs.com/package/@open_auth/auth","https://www.npmjs.com/package/@open_auth/react-ui"] ,
+        tech : ["ReactJS", "SQL", "PostgreSQL", "TypeScript", "ExpressJS" , "JWT"] ,
+        github : ["https://github.com/syed-minhaj/open_auth"] ,
+        role : ["Front-End Developer", "Back-End Developer"] ,
+        status : "Active",
+        display : true
     },
     {
         name : "Open Course",
@@ -71,20 +89,8 @@ const Projects : Project[] = [
         tech : ["ReactJS", "NextJS", "TypeScript", "PostgreSQL", "PrismaORM", "Stripe", "Supabase" , "AuthJS"] ,
         github : ["https://github.com/syed-minhaj/open-course"] ,
         role : ["Front-End Developer", "Back-End Developer" , "Database Administrator"] ,
-        status : "Active"
-    },
-    {  
-        name : "Open Auth" , 
-        shortDescription: "Core: Auth library for web apps using One-Time Passwords (OTP) and Password-based login." ,
-        description : `A simple and lightweight authentication library for web apps using One-Time Passwords (OTP) and Password-based login. 🔒
-        Built in TypeScript, compiled for both CommonJS and ESModules. \n 
-        UI: This package provides ready-to-use pages for signing in, signing up, and deleting accounts, with HTML inline styling so no CSS setup is required.`,
-        images : ["/webp/projects/openAuth.webp"] ,
-        url : ["https://www.npmjs.com/package/@open_auth/auth","https://www.npmjs.com/package/@open_auth/react-ui"] ,
-        tech : ["ReactJS", "SQL", "PostgreSQL", "TypeScript", "ExpressJS" , "JWT"] ,
-        github : ["https://github.com/syed-minhaj/open_auth"] ,
-        role : ["Front-End Developer", "Back-End Developer"] ,
-        status : "Active"
+        status : "Active",
+        display : false
     },
     {
         name : "Image Convert",
@@ -96,7 +102,8 @@ const Projects : Project[] = [
         tech : ["ReactJS", "NextJS", "TypeScript", "TailwindCSS"] ,
         github : ["https://github.com/syed-minhaj/imageConvertor" ],
         role : ["Front-End Developer", "Back-End Developer" ,"Designer"] ,
-        status : "Active"
+        status : "Active",
+        display : false
     },
     {
         name : "Chat App",
@@ -108,7 +115,8 @@ const Projects : Project[] = [
         tech : ["ReactJS", "NextJS", "ExpressJS", "WebSocket" , "Socket.io" , "TypeScript" , "TailwindCSS"] ,
         github : ["https://github.com/syed-minhaj/chatapp","https://github.com/syed-minhaj/chatapp-socketiobackend"] ,
         role : ["Front-End Developer", "Back-End Developer"] ,
-        status : "Active"
+        status : "Active",
+        display : false
     }
 ]
 
