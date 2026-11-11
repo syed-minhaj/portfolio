@@ -20,7 +20,7 @@ export default function GeoHarvestCaseStudy() {
                 </div>
 
                 <div className="flex flex-col items-center mb-8">
-                    <Image className="w-full rounded border" src="/webp/projects/geoHarvest1.webp" alt="GeoHarvest landing page" width={1280} height={720} />
+                    <Image className="w-full rounded border" src="/webp/projects/geoHarvest-landing.webp" alt="GeoHarvest landing page" width={1365} height={767} />
                 </div>
 
                 <div className="flex flex-row flex-wrap items-center gap-2 mb-8">
@@ -157,7 +157,7 @@ export default function GeoHarvestCaseStudy() {
                 </section>
 
                 <div className="flex flex-col items-center mb-12">
-                    <Image className="w-11/12 md:w-5/6 rounded border" src="/webp/projects/geoHarvest-fields.webp" alt="Fields overview page showing field cards with SVG polygon previews" width={1280} height={720} />
+                    <Image className="w-11/12 md:w-5/6 rounded border" src="/webp/projects/geoHarvest-fields.webp" alt="Fields overview page showing field cards with SVG polygon previews" width={1365} height={767} />
                     <span className="block text-xs text-foreground/50 text-center mt-2">Fields overview with SVG polygon previews and health indicators</span>
                 </div>
 
@@ -201,7 +201,7 @@ export default function GeoHarvestCaseStudy() {
                 </section>
 
                 <div className="flex flex-col items-center mb-12">
-                    <Image className="w-11/12 md:w-5/6 rounded border" src="/webp/projects/geoHarvest-dashboard.webp" alt="Farm at a Glance dashboard with overview map, KPI cards, and field health table" width={1280} height={720} />
+                    <Image className="w-11/12 md:w-5/6 rounded border" src="/webp/projects/geoHarvest-dashboard.webp" alt="Farm at a Glance dashboard with overview map, KPI cards, and field health table" width={1365} height={767} />
                     <span className="block text-xs text-foreground/50 text-center mt-2">Farm at a Glance dashboard with overview map, KPIs, and health indicators</span>
                 </div>
 
@@ -230,7 +230,7 @@ export default function GeoHarvestCaseStudy() {
                 </section>
 
                 <div className="flex flex-col items-center mb-12">
-                    <Image className="w-11/12 md:w-5/6 rounded border" src="/webp/projects/geoHarvest-analytics.webp" alt="Analytics page with cross-field KPIs, vegetation index trends, and field comparison charts" width={1280} height={720} />
+                    <Image className="w-11/12 md:w-5/6 rounded border" src="/webp/projects/geoHarvest-analytics.webp" alt="Analytics page with cross-field KPIs, vegetation index trends, and field comparison charts" width={1365} height={767} />
                     <span className="block text-xs text-foreground/50 text-center mt-2">Analytics page with trend charts, field comparison, and crop distribution</span>
                 </div>
 

@@ -10,7 +10,7 @@ const CaseStudies: CaseStudy[] = [
         name: "GeoHarvest",
         shortDescription:
             "Precision agriculture with Sentinel-2 satellite imagery — water, nitrogen, phosphorus, and crop stress monitoring for farmers.",
-        image: "/webp/projects/geoHarvest1.webp",
+        image: "/webp/projects/geoHarvest-landing.webp",
         href: "/case-studies/geo-harvest",
     },
     {
